@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a41759b-af6f-4e10-a2c6-1b597c18e244" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/layout/topBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/abstracts/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/abstracts/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/base/_base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/components/_button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/components/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/layout/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/pages/_productList.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/productDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/productDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/productList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/productList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/topBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/topBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +53,11 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

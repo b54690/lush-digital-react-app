@@ -15,11 +15,10 @@ class ProductDetail extends PureComponent {
 
     render() {
         const {product} = this.props;
-        console.log(product);
         return(
             <div>
                 <Link to={`/productList`}>
-                    <div key={product.id}>
+                    <div>
                         PRODUCT ID {product.id}
                     </div>
                 </Link>

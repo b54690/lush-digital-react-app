@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* this defines what 1 x rem should be */
+  /* desired fontsize / default font size (16px)*/
+  font-size: 62.5% !important;
+}
+
+body {
+  box-sizing: border-box;
+}
