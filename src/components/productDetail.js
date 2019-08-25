@@ -1,19 +1,16 @@
 import React, { PureComponent } from 'react'
 import {connect} from 'react-redux'
 import {getProduct} from "../actions/products";
+import {Link} from "react-router-dom";
 
 class ProductDetail extends PureComponent {
 
     state = {
-        productId: Number((window.location.href).split('/').pop()),
-        edit: false
+        productId: Number((window.location.href).split('/').pop())
     };
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this.props.getProduct(this.state.productId);
-    }
-
-    getProduct() {
     }
 
     render() {
@@ -21,9 +18,11 @@ class ProductDetail extends PureComponent {
         console.log(product);
         return(
             <div>
-                <div key={product.id}>
-                    PRODUCT ID {product.id}
-                </div>
+                <Link to={`/productList`}>
+                    <div key={product.id}>
+                        PRODUCT ID {product.id}
+                    </div>
+                </Link>
             </div>
         )
     }

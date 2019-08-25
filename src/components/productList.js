@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 class ProductList extends PureComponent {
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this.getProducts();
     }
 
@@ -14,7 +14,6 @@ class ProductList extends PureComponent {
     }
 
     renderProducts = (product) => {
-        console.log(product)
         return (
             <div>
                 <Link to={`/productList/${product.id}`}>
