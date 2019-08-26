@@ -19,13 +19,14 @@ class ProductList extends PureComponent {
                 <div className="col-1-of-5">
                     <div className="card">
                         <div className="card__side card__side--front">
-                            <div className="card__picture" style={{backgroundImage: `url(${product.media.hero_image})`}}>&nbsp;</div>
+                            <div className="card__picture"
+                                 style={{backgroundImage: `url(${product.media.hero_image})`}}>&nbsp;</div>
                             <h4 className="card__heading"><span
                                 className="card__heading-span">{product.title}</span></h4>
                             <div className="card__details">
                                 <ul>
                                     <li><strong>{product.product_type}</strong></li>
-                                    <li>{product.description}</li>
+                                    <li><i>{product.description}</i></li>
                                     <li>{product.certification}</li>
                                     <li>{product.average_rating}</li>
                                     <li>{product.average_rating_percentage}</li>

@@ -1,9 +1,9 @@
 .card {
+  //**Gives a 3D-positioned element some perspective**//
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem;
-
   //*similar to float issue, the height of the parent collapses. To resolve we have to match the parent height to the child height **//
 
   &__side {
@@ -19,7 +19,7 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
     &--front {
-      background-color: $color-white;
+      //background-color: $color-white;
     }
 
     &--back {
@@ -40,7 +40,6 @@
   &__picture {
     background-size: cover;
     height: 23rem;
-    background-blend-mode: screen;
     --webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-right-radius: 3px;
@@ -48,7 +47,7 @@
   }
 
   &__heading {
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase;
     text-align: right;
@@ -56,7 +55,7 @@
     position: absolute;
     top: 12rem;
     right: 1rem;
-    width: 70%;
+    width: 75%;
 
     &-span {
       padding: 0.5rem 1rem;
@@ -74,8 +73,9 @@
     padding: 3rem;
 
     ul {
+      //removes bullet points//
       list-style: none;
-      width: 80%;
+      width: 90%;
       // centers a block within a block//
       margin: 0 auto;
 
@@ -108,8 +108,8 @@
   }
 
   &__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-transform: none;
   }
 
   &__price-value {
