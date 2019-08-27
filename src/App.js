@@ -10,7 +10,6 @@ class App extends Component {
         return (
             <Router>
                 <div >
-
                     <main>
                         <nav>
                             <NavBar/>

@@ -22,9 +22,18 @@ class ProductDetail extends PureComponent {
         const {product} = this.props;
 
         return (
-            <div>
-                <header>{product.name}</header>
-                <VideoHeader/>
+            <div className="container">
+                <header className="header">
+                    <VideoHeader/>
+                </header>
+                <div className="content">
+                    <div className="sideBar">
+                        SideBar
+                    </div>
+                    <main className="items">
+                        Product items
+                    </main>
+                </div>
             </div>
 
         )

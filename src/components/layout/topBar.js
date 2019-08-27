@@ -1,21 +1,24 @@
 import React from 'react'
-import { withRouter } from 'react-router'
-import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
+import {withRouter} from 'react-router'
+import {connect} from 'react-redux'
+import {ReactComponent as Search} from '../../images/SVG/search.svg';
+import logo from '../../images/logo.png'
 
 const NavBar = (props) => {
     const {location, history} = props;
 
     return (
-        <nav className="nav">
-            <div className="nav__container">
-                <Link to='/' className="nav__container-logo">LUSH</Link>
-                {
-                    location.pathname.indexOf('productList') > 0 &&
-                    <button onClick={() => history.go(-1)}>All Products</button>
-                }
-            </div>
-        </nav>
+        <header className="nav">
+            <img src={logo} alt="nav image" className="logo"/>
+            <form action="#" className="search">
+                <input type="text" className="search__input" placeholder="Search products"/>
+                <button className="search__button">
+                    <div className="search__icon">
+                        <Search/>
+                    </div>
+                </button>
+            </form>
+        </header>
     )
 };
 
