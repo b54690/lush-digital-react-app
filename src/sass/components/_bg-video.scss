@@ -1,18 +1,52 @@
 .bg-video {
-  position: absolute;
+  padding: 1rem 0;
+  position: relative;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  // negative z index ensures element sits in the background
-  z-index: -1;
-  opacity: .80;
   overflow: hidden;
 
   &__content {
-    height: 50rem;
+    height: 20rem;
     width: 100%;
     // object maintains the aspect ratio whilst filling the parent element //
     object-fit: cover;
+    // negative z index ensures element sits in the background
+    z-index: -1;
+    opacity: .55;
+
+    @include respond(tab-port) {
+      height: 15rem;
+    }
+  }
+}
+
+.heading-primary {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: $color-white;
+  position: absolute;
+  top: 15rem;
+  right: 2rem;
+  width: 75%;
+
+  @include respond(tab-port) {
+    font-size: 2rem;
+    top: 11rem;
+    right: 1rem
+  }
+
+  &__span {
+    padding: 0.5rem 1rem;
+    // Sets span over n lines, if the max width of the span is reached //
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    background-image: linear-gradient(to right bottom,
+            rgba($color-secondary-light, .85),
+            rgba($color-secondary-dark, .85)
+    );
   }
 }

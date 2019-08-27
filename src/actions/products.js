@@ -9,9 +9,6 @@ export const getProducts = () => (dispatch) => {
     request
         .get(`${baseUrl}`)
         .then(response => dispatch({
-            headers: {
-                'Access-Control-Allow-Origin': '*'
-            },
             type: GET_PRODUCTS,
             payload: response.body
         }))

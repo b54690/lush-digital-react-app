@@ -1,13 +1,15 @@
 import React from 'react'
 import { withRouter } from 'react-router'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 
-const TopBar = (props) => {
+const NavBar = (props) => {
     const {location, history} = props;
 
     return (
-        <nav>
-            <div>
+        <nav className="nav">
+            <div className="nav__container">
+                <Link to='/' className="nav__container-logo">LUSH</Link>
                 {
                     location.pathname.indexOf('productList') > 0 &&
                     <button onClick={() => history.go(-1)}>All Products</button>
@@ -18,5 +20,5 @@ const TopBar = (props) => {
 };
 
 export default withRouter(
-    connect()(TopBar)
+    connect()(NavBar)
 )

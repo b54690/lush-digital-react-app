@@ -70,18 +70,18 @@
   }
 
   &__details {
-    padding: 3rem;
+    padding: 1rem;
 
     ul {
       //removes bullet points//
       list-style: none;
-      width: 90%;
+      width: 100%;
       // centers a block within a block//
       margin: 0 auto;
 
       li {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         padding: 1rem;
 
         &:not(:last-child) {

@@ -7,8 +7,8 @@ export const getProductVideo = (productId) => (dispatch) => {
 
     request
         .get(`${baseUrl}/${productId}`)
-        .then(response => {
-            dispatch({
+        .then(async response => {
+            await dispatch({
                 type: GET_PRODUCT_VIDEO,
                 payload: response.body.media.hero_video
             })

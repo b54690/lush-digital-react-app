@@ -3,17 +3,18 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import './sass/main.scss';
 import ProductList from "./components/productList";
 import ProductDetail from "./components/productDetail";
-import TopBar from './components/layout/topBar'
+import NavBar from './components/layout/topBar'
 
 class App extends Component {
     render() {
         return (
             <Router>
                 <div >
-                    <nav>
-                        <TopBar/>
-                    </nav>
-                    <main style={{margin: 10}}>
+
+                    <main>
+                        <nav>
+                            <NavBar/>
+                        </nav>
                         <Route exact path="/" component={ProductList}/>
                         <Route exact path="/productList" component={ProductList}/>
                         <Route exact path="/productList/:id" component={ProductDetail}/>

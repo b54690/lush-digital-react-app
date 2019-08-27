@@ -5,12 +5,8 @@ import {Link} from "react-router-dom";
 
 class ProductList extends PureComponent {
 
-    UNSAFE_componentWillMount() {
-        this.getProducts();
-    }
-
-    getProducts() {
-        this.props.getProducts()
+    componentDidMount() {
+        this.props.getProducts();
     }
 
     renderProducts = (product, index) => {

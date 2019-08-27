@@ -6,7 +6,12 @@
   /** selects all of the classes that start with col- **/
   [class^="col-"] {
     float: left;
-    margin: 2.3rem;
+    margin: 2.4rem;
+
+    @include respond(tab-port) {
+      width: 100% !important;
+      margin: 1rem 0;
+    }
   }
 
   .col-1-of-2 {

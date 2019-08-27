@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react'
 import {connect} from 'react-redux'
 import {getProduct} from "../actions/products";
 import {getProductVideo} from "../actions/productVideo";
+import VideoHeader from "./videoHeader";
 
 class ProductDetail extends PureComponent {
 
@@ -14,30 +15,24 @@ class ProductDetail extends PureComponent {
 
     componentDidMount() {
         this.props.getProduct(this.state.productId);
-        this.props.getProductVideo(this.state.productId);
     }
 
-    componentWillUnmount() {
-    }
 
     render() {
-        const {product, video} = this.props;
-        console.log(video)
+        const {product} = this.props;
+
         return (
-            <div className="section-product-detail">
-                <div className="bg-video">
-                    <video className="bg-video__content" autoPlay muted loop>
-                        <source src={video} type='video/mp4'/>
-                    </video>
-                </div>
+            <div>
+                <header>{product.name}</header>
+                <VideoHeader/>
             </div>
+
         )
     }
 }
 
 const mapStateToProps = function (state) {
     return {
-        video: state.productVideo,
         product: state.product
     }
 };

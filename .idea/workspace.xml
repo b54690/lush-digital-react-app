@@ -2,20 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a41759b-af6f-4e10-a2c6-1b597c18e244" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actions/productVideo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/productVideo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sass/components/_bg-video.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/videoHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/abstracts/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/base/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/base/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/components/_top-bar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sass/pages/_productDetail.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/productVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/productVideo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/topBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/topBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/productDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/productDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/productList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/productList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/abstracts/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/abstracts/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/_bg-video.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/_bg-video.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/components/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/_card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/layout/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/layout/_grid.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/pages/_productList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/pages/_productList.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +61,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/sass/base" />
     </key>
   </component>
   <component name="RunDashboard">
