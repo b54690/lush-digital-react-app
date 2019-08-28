@@ -4,11 +4,12 @@ import {getProductVideo} from "../actions/productVideo";
 import {getProduct} from "../actions/products";
 
 class VideoHeader extends PureComponent {
+
     constructor(props) {
         super(props);
         this.state = {
             productId: Number((window.location.href).split('/').pop())
-        }
+    }
     }
 
     componentDidMount() {
@@ -25,8 +26,9 @@ class VideoHeader extends PureComponent {
                 </video>
                 <div className="u-center-text">
                     <h2 className="heading-primary">
-                            <span className="heading-primary__span">
-                                {product.title}</span>
+                        <span className="heading-primary__span">
+                            {product.title}
+                        </span>
                     </h2>
                 </div>
             </div>

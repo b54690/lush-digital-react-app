@@ -1,12 +1,17 @@
 .nav {
   height: 7rem;
   border-bottom:5px solid #000;
-  position: relative;
+  //position: relative;
   //** flex set on the parent element
   display: flex;
   //** auto gives equal space between elements
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  background-color: $color-white;
 }
 
 .logo {
@@ -29,13 +34,12 @@
     color: inherit;
     padding: 1.7rem 2rem;
     border-radius: 100px;
-    width: 90%;
+    width: 100%;
     transition: all .2s;
     margin-right: -3.5rem;
 
     &:focus {
       outline: none;
-      width: 100%;
       background-color: $color-grey-light-2;
     }
 

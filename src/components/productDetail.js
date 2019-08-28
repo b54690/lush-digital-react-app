@@ -13,10 +13,9 @@ class ProductDetail extends PureComponent {
         }
     }
 
-    componentDidMount() {
+     componentDidMount() {
         this.props.getProduct(this.state.productId);
     }
-
 
     render() {
         const {product} = this.props;
